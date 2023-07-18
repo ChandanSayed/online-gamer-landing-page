@@ -166,10 +166,24 @@ nav .nav-btn i {
   width: 1.5rem;
 }
 
+footer {
+  background-color: var(--black);
+}
+footer ul {
+  margin-top: 32px;
+}
+footer ul li a {
+  color: var(--white);
+  padding: 0.5rem 1rem;
+}
+footer ul li a:hover {
+  opacity: 0.9;
+}
+
 @media (min-width: 767px) {
   html,
   body {
-    font-size: 100%;
+    font-size: 80%;
   }
   .nav-container {
     background: #fff;
@@ -180,6 +194,9 @@ nav .nav-btn i {
   }
   .justify-content-between {
     justify-content: space-between;
+  }
+  .justify-content-center {
+    justify-content: center;
   }
   .justify-content-end {
     justify-content: flex-end;
@@ -192,5 +209,12 @@ nav .nav-btn i {
   }
   .navbar-brand {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  html,
+  body {
+    font-size: 100%;
   }
 }
