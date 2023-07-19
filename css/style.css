@@ -16,6 +16,7 @@ html,
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 62.5%;
+  font-weight: 400;
 }
 a {
   text-decoration: none;
@@ -23,9 +24,7 @@ a {
 ul {
   list-style: none;
 }
-.font-regular {
-  font-weight: 400;
-}
+
 .font-medium {
   font-weight: 500;
 }
@@ -71,6 +70,9 @@ ul {
 }
 .text-white {
   color: var(--white);
+}
+.bg-white {
+  background: var(--white);
 }
 
 .btn {
@@ -202,7 +204,7 @@ nav .nav-btn i {
   margin-right: auto;
   background-image: url('../images/goatbanner.png');
   background-size: contain;
-  padding: 2.25rem 6rem;
+
   margin-top: 1rem;
 }
 .banner-details a {
@@ -287,6 +289,13 @@ nav .nav-btn i {
   bottom: -4.8rem;
 }
 
+.career {
+  background: linear-gradient(90deg, var(--title-first-color) 0%, var(--title-first-color) 100%), url('../images/career.png');
+}
+.career .btn {
+  color: var(--title-first-color);
+}
+
 footer {
   background-color: var(--black);
 }
@@ -354,15 +363,18 @@ footer ul li a:hover {
   .double-card .mini {
     position: absolute;
     max-width: 12rem;
-    left: -4rem;
+    left: -3rem;
     bottom: -4.8rem;
   }
   .two .double-card .mini {
     position: absolute;
     max-width: 12rem;
     left: auto;
-    right: -4rem;
+    right: -3rem;
     bottom: -4.8rem;
+  }
+  .banner-details {
+    padding: 2.25rem 6rem;
   }
 }
 
@@ -386,15 +398,15 @@ footer ul li a:hover {
 @media (min-width: 1024px) {
   .double-card .mini {
     position: absolute;
-    max-width: 20rem;
-    left: -7rem;
+    max-width: 14rem;
+    left: -3rem;
     bottom: -4.8rem;
   }
   .two .double-card .mini {
     position: absolute;
-    max-width: 16rem;
+    max-width: 14rem;
     left: auto;
-    right: -7rem;
+    right: -3rem;
     bottom: -4.8rem;
   }
 }
@@ -415,5 +427,18 @@ footer ul li a:hover {
   }
   .w-50 {
     max-width: 50%;
+  }
+  .double-card .mini {
+    position: absolute;
+    max-width: 20rem;
+    left: -9rem;
+    bottom: -4.8rem;
+  }
+  .two .double-card .mini {
+    position: absolute;
+    max-width: 20rem;
+    left: auto;
+    right: -9rem;
+    bottom: -4.8rem;
   }
 }
