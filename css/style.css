@@ -245,12 +245,11 @@ nav .nav-btn i {
   gap: 24px;
 }
 
-.funny-games .card {
-  width: calc(25% - 12px);
-}
-
 .funny-games .card .card-img {
   position: relative;
+}
+.funny-games .card .card-img img {
+  border-radius: 1rem;
 }
 .funny-games .card .card-img .card-overlay {
   display: none;
@@ -265,6 +264,27 @@ nav .nav-btn i {
   right: 0;
   border-radius: 16px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+.anniversary img {
+  border-radius: 8px;
+}
+
+.double-card {
+  position: relative;
+}
+
+.double-card .mini {
+  position: absolute;
+  max-width: 10rem;
+  left: -1rem;
+  bottom: -4.8rem;
+}
+.two .double-card .mini {
+  position: absolute;
+  max-width: 10rem;
+  left: auto;
+  right: -1rem;
+  bottom: -4.8rem;
 }
 
 footer {
@@ -323,6 +343,27 @@ footer ul li a:hover {
   .text-end-md {
     text-align: right;
   }
+  .w-50 {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    width: 50%;
+  }
+  .funny-games .card {
+    width: calc(25% - 12px);
+  }
+  .double-card .mini {
+    position: absolute;
+    max-width: 12rem;
+    left: -4rem;
+    bottom: -4.8rem;
+  }
+  .two .double-card .mini {
+    position: absolute;
+    max-width: 12rem;
+    left: auto;
+    right: -4rem;
+    bottom: -4.8rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -343,6 +384,19 @@ footer ul li a:hover {
 }
 
 @media (min-width: 1024px) {
+  .double-card .mini {
+    position: absolute;
+    max-width: 20rem;
+    left: -7rem;
+    bottom: -4.8rem;
+  }
+  .two .double-card .mini {
+    position: absolute;
+    max-width: 16rem;
+    left: auto;
+    right: -7rem;
+    bottom: -4.8rem;
+  }
 }
 
 @media (min-width: 1200px) {
